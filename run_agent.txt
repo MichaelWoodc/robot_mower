@@ -1,0 +1,9 @@
+science@pi-ubuntu-server:~/Micro-XRCE-DDS-Agent/build$ MicroXRCEAgent udp4 --port 8888
+[1776016688.483913] error    | UDPv4AgentLinux.cpp | init                     | bind error             | port: 8888, errno: 98
+Error while starting IPvX agent!
+[1776016688.484046] info     | UDPv4AgentLinux.cpp | fini                     | server stopped         | port: 8888
+science@pi-ubuntu-server:~/Micro-XRCE-DDS-Agent/build$
+
+or
+
+ docker run -it --rm --net=host microros/micro-ros-agent:humble udp4 --port 8888
